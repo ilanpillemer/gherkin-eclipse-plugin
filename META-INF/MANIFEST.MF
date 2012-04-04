@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gherkin-eclipse-plugin
+Bundle-SymbolicName: gherkin-eclipse-plugin; singleton:=true
+Bundle-Version: 1.0.0.SNAPSHOT
+Bundle-Activator: za.co.hardlyhere.gherkin.eclipse.plugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

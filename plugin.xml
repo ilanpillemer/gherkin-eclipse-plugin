@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Gherkin Editor"
+            extensions="feature"
+            icon="icons/Green_dot_7px.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="za.co.hardlyhere.gherkin.eclipse.plugin.editors.GherkinEditor"
+            id="za.co.hardlyhere.gherkin.eclipse.plugin.editors.GherkinEditor">
+      </editor>
+   </extension>
+
+</plugin>
