@@ -2,9 +2,10 @@
 
 [First stab at syntax highlighting after first commit](http://www.flickr.com/photos/pillemer/7047175079)
 
-## Installation
+###  Installation
 
-Pretty yucky at the moment. 
+## Pretty yucky at the moment.
+
 * Given you have checked out the code.
 * And you have createf an empty plugin project in Eclipse.
 * And you have imported the folders into that project (overwrite mode)
