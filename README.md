@@ -5,12 +5,13 @@
 ## Installation
 
 Pretty yucky at the moment. 
-Given you have checked out the code.
-And you have createf an empty plugin project in Eclipse.
-And you have imported the folders into that project (overwrite mode)
-And you have exported from Eclipse into a jar file
-And you have dropped the jar file into your plugin directory
-Then you will have the first stab syntax highlighting in .feature files
+* Given you have checked out the code.
+* And you have createf an empty plugin project in Eclipse.
+* And you have imported the folders into that project (overwrite mode)
+* And you have exported from Eclipse into a jar file
+* And you have dropped the jar file into your plugin directory
+* Then you will have the first stab syntax highlighting in .feature files
+
 
 I will make a jar file available soon of latest build to just drop into the plugin directory. Probably tonight my time.
 
