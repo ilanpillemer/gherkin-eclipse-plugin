@@ -43,26 +43,26 @@ public class GherkinConfiguration extends SourceViewerConfiguration {
 		}
 		return scanner;
 	}
-//	protected GherkinTagScanner getGherkinTagScanner() {
-//		if (tagScanner == null) {
-//			tagScanner = new GherkinTagScanner(colorManager);
-//			tagScanner.setDefaultReturnToken(
-//				new Token(
-//					new TextAttribute(
-//						colorManager.getColor(IGherkinColorConstants.TAG))));
-//		}
-//		return tagScanner;
-//	}
+	protected GherkinTagScanner getGherkinTagScanner() {
+		if (tagScanner == null) {
+			tagScanner = new GherkinTagScanner(colorManager);
+			tagScanner.setDefaultReturnToken(
+				new Token(
+					new TextAttribute(
+						colorManager.getColor(IGherkinColorConstants.TAG))));
+		}
+		return tagScanner;
+	}
 
 	public IPresentationReconciler getPresentationReconciler(ISourceViewer sourceViewer) {
 		PresentationReconciler reconciler = new PresentationReconciler();
 
-//		DefaultDamagerRepairer dr =
-//			new DefaultDamagerRepairer(getGherkinTagScanner());
-//		reconciler.setDamager(dr, GherkinPartitionScanner.GHERKIN_TAG);
-//		reconciler.setRepairer(dr, GherkinPartitionScanner.GHERKIN_TAG);
+		DefaultDamagerRepairer dr =
+			new DefaultDamagerRepairer(getGherkinTagScanner());
+		reconciler.setDamager(dr, GherkinPartitionScanner.GHERKIN_TAG);
+		reconciler.setRepairer(dr, GherkinPartitionScanner.GHERKIN_TAG);
 
-		DefaultDamagerRepairer dr = new DefaultDamagerRepairer(getGherkinScanner());
+		dr = new DefaultDamagerRepairer(getGherkinScanner());
 		reconciler.setDamager(dr, IDocument.DEFAULT_CONTENT_TYPE);
 		reconciler.setRepairer(dr, IDocument.DEFAULT_CONTENT_TYPE);
 
