@@ -1,20 +1,20 @@
 ## Screenshots
 
-[First stab at syntax highlighting after first commit](http://www.flickr.com/photos/pillemer/7047175079)
+[Example of how syntax highlighting looks](http://www.flickr.com/photos/pillemer/7048803739)
 
 ##  Installation
 
-### Pretty yucky at the moment.
+### Easy install and uninstall
+
+* Download the jar file and copy into your Eclipse plugin directory to install
+* Delete the jar file from the Eclipse plugin directory to uninstall
+
+### Hacking instructions
 
 * Given you have checked out the code.
 * And you have created an empty plugin project in Eclipse.
 * And you have imported the folders into that project (overwrite mode)
-* And you have exported from Eclipse into a jar file
-* And you have dropped the jar file into your plugin directory
-* Then you will have the first stab syntax highlighting in .feature files
-
-
-I will make a jar file available soon of latest build to just drop into the plugin directory. Probably tonight my time.
+* Then you will have the code to hack with
 
 ###
 
