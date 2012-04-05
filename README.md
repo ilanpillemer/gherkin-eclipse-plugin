@@ -7,7 +7,7 @@
 ### Pretty yucky at the moment.
 
 * Given you have checked out the code.
-* And you have createf an empty plugin project in Eclipse.
+* And you have created an empty plugin project in Eclipse.
 * And you have imported the folders into that project (overwrite mode)
 * And you have exported from Eclipse into a jar file
 * And you have dropped the jar file into your plugin directory
