@@ -2,6 +2,7 @@ package za.co.hardlyhere.gherkin.eclipse.plugin.editors;
 
 import gherkin.I18n;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -19,13 +20,19 @@ public class GherkinScanner extends RuleBasedScanner {
     private static final List<String> FEATURE_ELEMENT_KEYWORD_KEYS = Arrays.asList("feature", "background", "scenario", "scenario_outline", "examples");
     private static final List<String> STEP_KEYWORD_KEYS = Arrays.asList("given", "when", "then", "and", "but");
     private static I18n i18n;   
+    private static String _code = "en";
+    private ColorManager manager;
 	
 	public GherkinScanner(ColorManager manager) {
+		this.manager = manager;
+		configureRules();
+	}
+
+	public void configureRules() {
 		
-		i18n = new I18n("en"); // default
+		validateIsoCode();
 		
-		//IWorkbenchPage activePage = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
-		
+		i18n = new I18n(_code); 
 		
 		IToken keyword= new Token(new TextAttribute(manager.getColor(IGherkinColorConstants.KEYWORD)));
 		IToken tag= new Token(new TextAttribute(manager.getColor(IGherkinColorConstants.KEYWORD)));
@@ -79,5 +86,28 @@ public class GherkinScanner extends RuleBasedScanner {
 		IRule[] result= new IRule[rules.size()];
 		rules.toArray(result);
 		setRules(result);
+	}
+
+	private void validateIsoCode() {
+		boolean valid = false;
+		try {
+			List<I18n> all = gherkin.I18n.getAll();
+			for (I18n i18n : all) {
+				if (i18n.getIsoCode().equals(_code)) {
+					valid = true;
+					break;
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			_code = "en";
+		}
+		
+		if (!valid) _code = "en";
+	}
+	
+	public static void setCode(String code) {
+		_code = code;
 	}
 }

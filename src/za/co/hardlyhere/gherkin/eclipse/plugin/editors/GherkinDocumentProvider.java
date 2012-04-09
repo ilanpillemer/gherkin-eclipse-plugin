@@ -12,7 +12,7 @@ public class GherkinDocumentProvider extends FileDocumentProvider {
 		IDocument document = super.createDocument(element);
 		if (document != null) {
 			IDocumentPartitioner partitioner =
-				new FastPartitioner(
+				new GherkinPartitioner(
 					new GherkinPartitionScanner(),
 					new String[] {
 						GherkinPartitionScanner.GHERKIN_TAG,

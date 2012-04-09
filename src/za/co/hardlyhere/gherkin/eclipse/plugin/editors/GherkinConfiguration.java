@@ -62,7 +62,7 @@ public class GherkinConfiguration extends SourceViewerConfiguration {
 		reconciler.setDamager(dr, GherkinPartitionScanner.GHERKIN_TAG);
 		reconciler.setRepairer(dr, GherkinPartitionScanner.GHERKIN_TAG);
 
-		dr = new DefaultDamagerRepairer(getGherkinScanner());
+		dr = new GherkinDamagerRepairer(getGherkinScanner());
 		reconciler.setDamager(dr, IDocument.DEFAULT_CONTENT_TYPE);
 		reconciler.setRepairer(dr, IDocument.DEFAULT_CONTENT_TYPE);
 
