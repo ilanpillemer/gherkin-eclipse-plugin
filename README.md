@@ -1,6 +1,6 @@
 ## Screenshots
 
-[Example of how syntax highlighting looks](http://www.flickr.com/photos/pillemer/7048803739)
+[Example of how syntax highlighting in various languages looks](http://www.flickr.com/photos/pillemer/6915915338/)
 
 ##  Installation
 
