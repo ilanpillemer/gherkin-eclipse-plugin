@@ -7,6 +7,7 @@
 ### Easy install and uninstall
 
 * Download the jar file and copy into your Eclipse plugin directory to install
+(You can find the jar file now in the downloads sections)
 * Delete the jar file from the Eclipse plugin directory to uninstall
 
 ### Hacking instructions
