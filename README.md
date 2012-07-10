@@ -1,4 +1,4 @@
-## Screenshots
+## Screenshots 
 
 [Example of how syntax highlighting in various languages looks](http://www.flickr.com/photos/pillemer/6915915338/)
 
