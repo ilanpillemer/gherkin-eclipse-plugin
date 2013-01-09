@@ -1,3 +1,13 @@
+## Breaking news.
+
+This plugin is now deprecated. I have joined forces with a couple of other developers who were also working on an eclipse plugin.
+I have already ported all functionality to the new repo - as well as have already added enhancements. 
+(https://github.com/cucumber/cucumber-eclipse).
+
+Please visit the plugin site to find out how to install it. 
+(http://cukes.info/cucumber-eclipse/)
+
+
 ## Screenshots 
 
 [Example of how syntax highlighting in various languages looks](http://www.flickr.com/photos/pillemer/6915915338/)
